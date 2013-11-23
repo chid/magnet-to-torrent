@@ -33,9 +33,12 @@ if handle.has_metadata():
 
     for node in torinfo.nodes():
         torfile.add_node(node)
-
+    
+    # this line has issues, on utorrent it creates all files with same tier
+    tier = 0
     for tracker in torinfo.trackers():
-        torfile.add_tracker(tracker.url)
+        torfile.add_tracker(tracker.url, tier)
+        tier = tier + 1
 
     torfile.set_priv(torinfo.priv())
 
