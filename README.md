@@ -6,9 +6,9 @@ This python script will convert a magnet link input into a magnet link that will
 Dependencies
 ============
 
-*python2.7 (will support python3 in the future)
-*python-libtorrent
-*Connection to the Internet
+* python2.7 (will support python3 in the future)
+* python-libtorrent
+* Connection to the Internet
 
 The python-libtorrent is used to retrieve the torrent file from the magnet metadata.
 
